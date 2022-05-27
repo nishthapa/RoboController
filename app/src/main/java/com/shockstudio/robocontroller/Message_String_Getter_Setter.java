@@ -1,14 +1,17 @@
 package com.shockstudio.robocontroller;
 
+import android.util.Log;
+
 public class Message_String_Getter_Setter
 {
     int power_value, forward_throttle, reverse_throttle, left_throttle, right_throttle;
     String power_value_str, forward_throttle_str, reverse_throttle_str, left_throttle_str, right_throttle_str;
-    String message = "f" + forward_throttle + "b" + reverse_throttle + "l" + left_throttle + "r" + right_throttle;
+    String final_message = "f" + forward_throttle + "b" + reverse_throttle + "l" + left_throttle + "r" + right_throttle;
 
     public void setForwardThrottle(int forward_throttle)
     {
         this.forward_throttle = forward_throttle;
+        Log.i("Getter Setter", String.valueOf(forward_throttle));
     }
 
     public void setReverse_throttle(int reverse_throttle)
@@ -31,6 +34,10 @@ public class Message_String_Getter_Setter
         this.power_value = power_value;
     }
 
+    public void setFinalMessage(String final_message)
+    {
+        this.final_message = final_message;
+    }
 
     public int getForward_throttle()
     {
@@ -55,5 +62,11 @@ public class Message_String_Getter_Setter
     public int getPower_value()
     {
         return power_value;
+    }
+
+    public String getFinalMessage()
+    {
+        final_message = "f" + forward_throttle + "b" + reverse_throttle + "l" + left_throttle + "r" + right_throttle;
+        return final_message;
     }
 }
