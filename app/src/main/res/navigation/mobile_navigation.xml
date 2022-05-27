@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/button_controller_fragment">
+
+    <fragment
+        android:id="@+id/button_controller_fragment"
+        android:name="com.shockstudio.robocontroller.ui.buttons.ButtonControllerFragment"
+        android:label="@string/button_controller"
+        tools:layout="@layout/fragment_button_ctrl" />
+
+    <fragment
+        android:id="@+id/joystick_controller_fragment"
+        android:name="com.shockstudio.robocontroller.ui.joystick.JoystickControllerFragment"
+        android:label="@string/joystick_controller"
+        tools:layout="@layout/fragment_joystick_ctrl" />
+
+    <fragment
+        android:id="@+id/sensor_controller_fragment"
+        android:name="com.shockstudio.robocontroller.ui.sensor.SensorControllerFragment"
+        android:label="@string/sensor_controller"
+        tools:layout="@layout/fragment_sensor_ctrl" />
+</navigation>
