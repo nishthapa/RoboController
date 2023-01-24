@@ -1,4 +1,4 @@
-package com.shockstudio.robocontroller.ui.joystick;
+package com.shockstudio.robocontroller.ui.physical_joystick;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -12,7 +12,7 @@ public class JoystickControllerViewModel extends ViewModel
     public JoystickControllerViewModel()
     {
         mText = new MutableLiveData<>();
-        //mText.setValue("This is Joystick Controller fragment");
+        mText.setValue("This is Joystick Controller fragment");
     }
 
     public LiveData<String> getText()

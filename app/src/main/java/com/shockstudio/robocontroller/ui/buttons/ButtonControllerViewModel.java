@@ -28,7 +28,7 @@ public class ButtonControllerViewModel extends ViewModel
         mstr.setPower_value();
          */
         mText = new MutableLiveData<>();
-        mText.setValue("This is Button Controller fragment");
+        //mText.setValue("This is Button Controller fragment");
     }
 
     public LiveData<String> getText()
