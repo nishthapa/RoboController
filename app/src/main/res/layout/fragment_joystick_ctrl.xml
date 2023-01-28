@@ -26,10 +26,10 @@
 
     <io.github.controlwear.virtual.joystick.android.JoystickView
         android:id="@+id/left_joystick"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="150dp"
         android:layout_marginBottom="30dp"
         app:JV_backgroundColor="#009688"
         app:JV_borderColor="#00796B"
@@ -43,10 +43,10 @@
 
     <io.github.controlwear.virtual.joystick.android.JoystickView
         android:id="@+id/right_joystick"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="550dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:layout_marginBottom="30dp"
         app:JV_backgroundColor="#009688"
         app:JV_borderColor="#00796B"
